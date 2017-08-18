@@ -1,0 +1,16 @@
+Explain Hive Architecture & Components
+
+Hive is an SQL-like service built on Hadoop MapReduce (latest update is built on Spark) which provides data summary,
+query and analysis. It's architecture includes Metastore, Driver, several interfaces/connections.
+
+Hive Queries are made via 3 main ways.
+
+-Command Line Interface (CLI) is implemented via a command prompt.
+-Hive Web Interface (HWI) is implemented via an online GUI as an alternative to using CLI.
+-HiveServer2 (Thrift Server is the core of HS2) is an accumulation of different services that provide a flexibility to work with JDBC
+and ODBC compliant Business Intelligence tools (clients).
+
+Driver takes Hive queries and converts them into mapreduce jobs which are pushed to Resource Manager for processing.
+
+Metastore (HCatalog) contains the metadata of objects created using Hive, and can be configured using JPOX ORM solution on any
+compliant database server. It also acts as a schema repository accessible by other tools in the Hadoop ecosystem.
