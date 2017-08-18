@@ -1,8 +1,10 @@
-Explain Hive Architecture & Components
+ARCHITECTURE
 
 Hive is an SQL-like service built on Hadoop MapReduce (latest update is built on Spark) which provides data summary,
 query and analysis. It's architecture includes Metastore, Driver, several interfaces/connections.
 
+
+COMPONENTS
 Hive Queries are made via 3 main ways.
 
 -Command Line Interface (CLI) is implemented via a command prompt.
